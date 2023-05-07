@@ -45,13 +45,19 @@ function App() {
         <UserButton afterSignOutUrl={window.location.href} />
         </div>
       </SignedIn>
-      <SignedOut>
+      {/* <SignedOut>
         <SignInButton mode='modal' />
-      </SignedOut>
+      </SignedOut> */}
        
       </div>
      {user.isSignedIn && <p>Hellow {user.user && user.user.fullName} , 👩‍💻 Welcome back</p>}
-      {!user.isSignedIn && <p>Hello :) Unauthorized User. </p>}
+      {!user.isSignedIn && <div>
+         <p>Please Sign In?</p>
+            <SignedOut>
+                 <SignInButton mode='modal' />
+             </SignedOut>
+      
+      </div>}
       <p className="read-the-docs my-4">
         Click on the logos to learn more
       </p>
