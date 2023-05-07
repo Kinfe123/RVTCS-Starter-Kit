@@ -34,7 +34,7 @@ function App() {
       </div>
       <h1 className='b'>Vite + React + Supabase + Clerk + Tailwindcss</h1>
       <div className='flex flex-row justify-center items-center my-10 gap-5'>
-        <button className='btn'>Go To Docs</button>
+        <button className='btn'><a href="https://rvtcs.vercel.app/">Go To Docs </a></button>
        <a href="https://github.com/Kinfe123/RVTCS-Starter-Kit"> <button className='btn flex flex-row justify-center items-center gap-2'><AiFillGithub />Get the Github</button></a>
 
       </div>
